@@ -1,0 +1,49 @@
+/* xxl */
+@media (min-width:1400px) {
+    .container {
+        width: 1320px;
+        background-color: violet;
+    }
+}
+
+/* xl */
+@media (max-width:1399px) and (min-width:1200px) {
+    .container {
+        width: 1140px;
+        background-color: black;
+    }
+}
+
+/* lg */
+@media (max-width:1199px) and (min-width:992px) {
+    .container {
+        width: 960px;
+        background-color: brown;
+    }
+}
+
+/* md */
+@media (max-width:991px) and (min-width:768px) {
+    .container {
+        width: 720px;
+        background-color: chartreuse;
+    }
+}
+
+/* sm */
+@media (max-width:767px) and (min-width:576px) {
+    .container {
+        width: 540px;
+        background-color: tomato;
+    }
+}
+
+/* xs */
+@media (max-width:575px)  {
+    .container {
+        width: 100%;
+        background-color: crimson;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

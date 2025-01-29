@@ -1,0 +1,108 @@
+
+*{
+    box-sizing: border-box;
+ 
+    margin: 0px auto;
+}
+
+body{
+    background-image: url(../img/istockphoto-1345912457-612x612.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+p{
+    font-size: 50px;
+    color: white    ;
+    text-align: center;
+   font-weight: 900;
+    text-decoration: underline dashed greenyellow;
+
+}
+.box{
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    margin-top: 100px;
+}
+.box::after{
+    content: "";
+    width: 800px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 6%;
+    bottom: 10%;
+}
+.block{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    transition: 0.9s;
+}
+.block:nth-child(2){
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 23%;
+    bottom: 10%;
+    transition-timing-function: linear;
+}
+.block:nth-child(3){
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 36%;
+    bottom: 10%;
+    transition-timing-function: ease;
+}
+.block:nth-child(4){
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 49%;
+    bottom: 10%;
+    transition-timing-function: ease-in;
+}
+.block:nth-child(5){
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 62%;
+    bottom: 10%;
+    transition-timing-function: ease-out;
+}
+.block:nth-child(6){
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 75%;
+    bottom: 10%;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.block:nth-child(7){
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 88%;
+    bottom: 10%;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.box:hover .block{
+    height: 80%;
+    transform: scaleY(80deg);
+}

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+    background-color:bisque;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/rose.jpg);
+    float: left;
+    text-align: center;
+}
+.box2{
+    background-image: url(../img/erable.jpg);
+}
+.clear-fix{
+    clear: both;
+}
+.main{
+    height: 940px;
+    width: 940px;
+    font-size:  100px;
+    color: white;
+    line-height: 110px;
+    margin-top: 10px;
+    border: 70px solid rgb(47, 26, 0)
+}

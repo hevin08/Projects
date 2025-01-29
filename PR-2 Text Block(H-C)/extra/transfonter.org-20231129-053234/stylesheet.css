@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Ephesis';
+    src: url('Ephesis-Regular.woff2') format('woff2'),
+        url('Ephesis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik Mono One';
+    src: url('RubikMonoOne-Regular.woff2') format('woff2'),
+        url('RubikMonoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vina Sans';
+    src: url('VinaSans-Regular.woff2') format('woff2'),
+        url('VinaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

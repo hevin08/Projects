@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airpredise</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="page-loader">
+        <svg class="svg-calLoader" xmlns="http://www.w3.org/2000/svg" width="230" height="230">
+            <path class="cal-loader__path"
+                d="M86.429 40c63.616-20.04 101.511 25.08 107.265 61.93 6.487 41.54-18.593 76.99-50.6 87.643-59.46 19.791-101.262-23.577-107.142-62.616C29.398 83.441 59.945 48.343 86.43 40z"
+                fill="none" stroke="#0099cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="10 10 10 10 10 10 10 432" stroke-dashoffset="77" />
+            <path class="cal-loader__plane"
+                d="M141.493 37.93c-1.087-.927-2.942-2.002-4.32-2.501-2.259-.824-3.252-.955-9.293-1.172-4.017-.146-5.197-.23-5.47-.37-.766-.407-1.526-1.448-7.114-9.773-4.8-7.145-5.344-7.914-6.327-8.976-1.214-1.306-1.396-1.378-3.79-1.473-1.036-.04-2-.043-2.153-.002-.353.1-.87.586-1 .952-.139.399-.076.71.431 2.22.241.72 1.029 3.386 1.742 5.918 1.644 5.844 2.378 8.343 2.863 9.705.206.601.33 1.1.275 1.125-.24.097-10.56 1.066-11.014 1.032a3.532 3.532 0 0 1-1.002-.276l-.487-.246-2.044-2.613c-2.234-2.87-2.228-2.864-3.35-3.309-.717-.287-2.82-.386-3.276-.163-.457.237-.727.644-.737 1.152-.018.39.167.805 1.916 4.373 1.06 2.166 1.964 4.083 1.998 4.27.04.179.004.521-.076.75-.093.228-1.109 2.064-2.269 4.088-1.921 3.34-2.11 3.711-2.123 4.107-.008.25.061.557.168.725.328.512.72.644 1.966.676 1.32.029 2.352-.236 3.05-.762.222-.171 1.275-1.313 2.412-2.611 1.918-2.185 2.048-2.32 2.45-2.505.241-.111.601-.232.82-.271.267-.058 2.213.201 5.912.8 3.036.48 5.525.894 5.518.914 0 .026-.121.306-.27.638-.54 1.198-1.515 3.842-3.35 9.021-1.029 2.913-2.107 5.897-2.4 6.62-.703 1.748-.725 1.833-.594 2.286.137.46.45.833.872 1.012.41.177 3.823.24 4.37.085.852-.25 1.44-.688 2.312-1.724 1.166-1.39 3.169-3.948 6.771-8.661 5.8-7.583 6.561-8.49 7.387-8.702.233-.065 2.828-.056 5.784.011 5.827.138 6.64.09 8.62-.5 2.24-.67 4.035-1.65 5.517-3.016 1.136-1.054 1.135-1.014.207-1.962-.357-.38-.767-.777-.902-.893z"
+                class="cal-loader__plane" fill="#000033" />
+        </svg>
+    </div>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <header class>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder" href="#">
+                    <img src="img/pngwing.com (5).png" alt="" style="width: 50px; height: 50px;">
+                    AIRPREDISE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse main-menu float-end navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <ul class="sub-menu text-left" role="menu">
+                                <li>
+                                    <a href="#">Home-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home-2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home-3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home-4</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home-RTL</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                            <ul class="sub-menu text-left" role="menu">
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Course</a>
+                                </li>
+                                <li>
+                                    <a href="#">Course Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ's</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign in</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign up</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                            <ul class="sub-menu text-left" role="menu">
+                                <li>
+                                    <a href="#">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#">Service Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Deals</a>
+                            <ul class="sub-menu text-left" role="menu">
+                                <li>
+                                    <a href="#">Deals</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deals Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                            <ul class="sub-menu text-left" role="menu">
+                                <li>
+                                    <a href="#">Packages</a>
+                                </li>
+                                <li>
+                                    <a href="#">Packages Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Blog</a>
+                            <ul class="sub-menu text-left" role="menu">
+                                <li>
+                                    <a href="#">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Grid</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center me-0" role="search">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="btn-1 ms-5">
+                            <i class="fa-solid fa-plane me-1"></i>
+                            Book Now
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="detail">
+                        <p class="fw-bold">Private Jets Charters</p>
+                        <h2>
+                            Save Time &
+                            <br>
+                            Fly with Comfort
+                        </h2>
+                        <div class="btns">
+                            <a href="#" class="btn-1">
+                                <i class="fa-solid fa-plane me-1"></i>
+                                Book Now
+                            </a>
+                            <a href="#" class="btn-2">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="img">
+                        <img src="img/main-slider-three-img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- booking-section -->
+    <section class="booking-section">
+        <div class="shape-1">
+            <img src="img/request-shape-1.png" alt="">
+        </div>
+        <div class="shape-2">
+            <img src="img/request-shape-2.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inputs">
+                        <div class="input-box">
+                            <input type="text" size="40" placeholder="Fly from">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" size="40" placeholder="Fly to">
+                        </div>
+                        <div class="input-box">
+                            <input type="date" size="40" placeholder="Select date">
+                        </div>
+                        <div class="input-box">
+                            <input type="time" size="40" placeholder="Select time">
+                        </div>
+                        <div class="input-box">
+                            <input type="number" size="40" placeholder="Passenger">
+                        </div>
+                    </div>
+                    <div class="request-bottom">
+                        <p class="me-5  ">
+                            *After sending request. We'll contact you for
+                            more details about charter.
+                        </p>
+                        <a href="#" class="btn-1 mx-0">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about">
+        <div class="bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="detail d-flex p-3 w-100">
+                    <div class="col-6 p-3">
+                        <div class="cap mb-4">
+                            <h5>
+                                <span>About</span>
+                                Flynext
+                            </h5>
+                            <h3 class="fs-1 mb-3">Private Jet Charters save your time and give more comfort</h3>
+                            <p>
+                                Ut non augue egestas, commodo velit eget, vestibulum tellus. Curabitur vulputate
+                                pulvinar vel.
+                            </p>
+                        </div>
+                        <div class="cards w-100">
+                            <div class="line">
+                                <div class="content">
+                                    <a href="#">
+                                        <h4 class="fs-4">Call for book an order</h4>
+                                    </a>
+                                    <p class="fs-4 fw-bold">
+                                        8-800-10-500
+                                    </p>
+                                </div>
+                                <div class="btns">
+                                    <a href="#" class="btn-1">
+                                        <i class="fa-solid fa-plane me-1"></i>
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <a href="#" class="video-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider -->
+    <section class="slider">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <ul class="m-0 ">
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4">
+                            Black Friday Big Offer
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- tours -->
+    <section class="tours">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title text-center">
+                        <h6>OUR LUXURY CHARTERS</h6>
+                        <h2>
+                            Find The Right
+                            <span> Tours </span>
+                            For You
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-12 pb-5 text-center">
+                    <div class="tab-btn mb-5">
+                        <a href="#" class="blue">
+                            Popular Private Jets
+                        </a>
+                        <a href="#">
+                            Popular Destination
+                        </a>
+                    </div>
+                    <div class="tab-info">
+                        <div class="row">
+                            <!-- 1 -->
+                            <div class="col-4 mb-4">
+                                <div class="bor">
+                                    <div class="detail p-2">
+                                        <div class="img">
+                                            <img src="img/case-image-01.jpg" alt="">
+                                        </div>
+                                        <div class="contant text-start p-3">
+                                            <h6>Legacy 1000</h6>
+                                            <h4>Bombardier Global Jet Express XRS</h4>
+                                            <div class="caes-info d-flex mt-4">
+                                                <h5 class="mx-0">$4068</h5>
+                                                <p class="ms-4">Sites 09</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns text-start px-3">
+                                        <a href="#" class="btn-1">
+                                            Search For Flights +
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="col-4 mb-4">
+                                <div class="bor">
+                                    <div class="detail p-2">
+                                        <div class="img">
+                                            <img src="img/case-image-02.jpg" alt="">
+                                        </div>
+                                        <div class="contant text-start p-3">
+                                            <h6>Legacy 900</h6>
+                                            <h4>Honda Aircraft Company Reveals Latest</h4>
+                                            <div class="caes-info d-flex mt-4">
+                                                <h5 class="mx-0">$3068</h5>
+                                                <p class="ms-4">Sites 12</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns text-start px-3">
+                                        <a href="#" class="btn-1">
+                                            Search For Flights +
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-4 mb-4">
+                                <div class="bor">
+                                    <div class="detail p-2">
+                                        <div class="img">
+                                            <img src="img/case-image-03.jpg" alt="">
+                                        </div>
+                                        <div class="contant text-start p-3">
+                                            <h6>Legacy 600</h6>
+                                            <h4>NBAA Business Aviation Convention</h4>
+                                            <div class="caes-info d-flex mt-4">
+                                                <h5 class="mx-0">$2568</h5>
+                                                <p class="ms-4">Sites 13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns text-start px-3">
+                                        <a href="#" class="btn-1">
+                                            Search For Flights +
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- number -->
+    <section class="number py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 text-center">
+                    <h2 class="counter" data-speed="9000">
+                        1200
+                    </h2>
+                    <p class="px-3">Our Active Number</p>
+                </div>
+                <div class="col-3 text-center">
+                    <h2 class="counter" data-speed="9000">
+                        600
+                    </h2>
+                    <p class="px-3">Our Total Project</p>
+                </div>
+                <div class="col-3 text-center">
+                    <h2 class="counter" data-speed="9000">
+                        20
+                    </h2>
+                    <p class="px-3">Our Winning Award</p>
+                </div>
+                <div class="col-3 text-center">
+                    <h2 class="counter" data-speed="9000">
+                        60
+                    </h2>
+                    <p class="px-3">Our Team Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq -->
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="section-title">
+                        <span class="d-block fw-bold">Information</span>
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="user text-end">
+                        <span class="d-block">WE HAVE WORLDWIDE 20K HAPPY PASSENGER</span>
+                        <ul>
+                            <li class="d-inline-block">
+                                <img src="img/faq1.jpg" alt="">
+                            </li>
+                            <li class="d-inline-block">
+                                <img src="img/faq2.jpg" alt="">
+                            </li>
+                            <li class="d-inline-block">
+                                <img src="img/faq3.jpg" alt="">
+                            </li>
+                            <li class="d-inline-block">
+                                <img src="img/faq4.jpg" alt="">
+                            </li>
+                            <li class="d-inline-block">
+                                <i class="fa-solid fa-plus"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What Aircraft are used for Charter Flights?
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Non augue egestas commodo velit eget vestibulum tellus. Curabitur justo elit at
+                                    elementum orci pulvinar vel. Pellentesq habitant morbitr. Pellentesque habitant
+                                    morbi tristique.
+                                    How many people do they hold?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How many people do they hold?
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Non augue egestas commodo velit eget vestibulum tellus. Curabitur justo elit at
+                                    elementum orci pulvinar vel. Pellentesq habitant morbitr. Pellentesque habitant
+                                    morbi tristique.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Can I use more than one of your Aircrafts at a time?
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Non augue egestas commodo velit eget vestibulum tellus. Curabitur justo elit at
+                                    elementum orci pulvinar vel. Pellentesq habitant morbitr. Pellentesque habitant
+                                    morbi tristique.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What types of Aircrafts are available?
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Non augue egestas commodo velit eget vestibulum tellus. Curabitur justo elit at
+                                    elementum orci pulvinar vel. Pellentesq habitant morbitr. Pellentesque habitant
+                                    morbi tristique.
+                                    How many people do they hold?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Where can I fly on one of your Private Jets?
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Non augue egestas commodo velit eget vestibulum tellus. Curabitur justo elit at
+                                    elementum orci pulvinar vel. Pellentesq habitant morbitr. Pellentesque habitant
+                                    morbi tristique.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Is there a transfer from the airport to the hotel?
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Non augue egestas commodo velit eget vestibulum tellus. Curabitur justo elit at
+                                    elementum orci pulvinar vel. Pellentesq habitant morbitr. Pellentesque habitant
+                                    morbi tristique.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- cta -->
+    <section class="cta">
+        <div class="container">
+            <div class="inner z-1 position-relative">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="content">
+                            <h1>Do you want to get estimation?</h1>
+                            <p class="mx-auto">Use our hotline for quick get in touch for 24 hours.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="contact d-flex align-items-center">
+                            <a class="icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </a>
+                            <div class="detail">
+                                <span class="d-block">CALL ANYTIME</span>
+                                <a href="#">+92 ( 8800 ) - 6780</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-shape">
+                    <img src="img/cta-bg-shape2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fleet -->
+    <section class="fleet">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-8">
+                    <div class="title text-center">
+                        <h6 class="mb-2">AIRCRAFT</h6>
+                        <p class="display-4 mb-2">Our Fleet</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <!-- 1 -->
+                <div class="col-4 mb">
+                    <div class="box">
+                        <div class="img ">
+                            <img src="img/7HFTCPS.png" alt="">
+                        </div>
+                        <div class="deatil">
+                            <h3>Light Super Jets</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="info d-flex pb-3">
+                                <span>
+                                    <i class="fa-solid fa-chair pe-2"></i>
+                                    11 PASSENGERS
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-clock pe-2"></i>
+                                    8:45 HOURS
+                                </span>
+                            </div>
+                            <a href="#">
+                                SEE DETAIL >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-4 mb">
+                    <div class="box">
+                        <div class="img ">
+                            <img src="img/LSNDFSE.png" alt="">
+                        </div>
+                        <div class="deatil">
+                            <h3>Light Super Jets</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="info d-flex pb-3">
+                                <span>
+                                    <i class="fa-solid fa-chair pe-2"></i>
+                                    11 PASSENGERS
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-clock pe-2"></i>
+                                    8:45 HOURS
+                                </span>
+                            </div>
+                            <a href="#">
+                                SEE DETAIL >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-4 mb">
+                    <div class="box">
+                        <div class="img ">
+                            <img src="img/5QCVBXL.png" alt="">
+                        </div>
+                        <div class="deatil">
+                            <h3>Light Super Jets</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="info d-flex pb-3">
+                                <span>
+                                    <i class="fa-solid fa-chair pe-2"></i>
+                                    11 PASSENGERS
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-clock pe-2"></i>
+                                    8:45 HOURS
+                                </span>
+                            </div>
+                            <a href="#">
+                                SEE DETAIL >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-4">
+                    <div class="box">
+                        <div class="img ">
+                            <img src="img/54X7FD4.png" alt="">
+                        </div>
+                        <div class="deatil">
+                            <h3>Long-range Jets</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="info d-flex pb-3">
+                                <span>
+                                    <i class="fa-solid fa-chair pe-2"></i>
+                                    11 PASSENGERS
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-clock pe-2"></i>
+                                    8:45 HOURS
+                                </span>
+                            </div>
+                            <a href="#">
+                                SEE DETAIL >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-4">
+                    <div class="box">
+                        <div class="img ">
+                            <img src="img/S7SRGRG.png" alt="">
+                        </div>
+                        <div class="deatil">
+                            <h3>Midsize Helicopter</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="info d-flex pb-3">
+                                <span>
+                                    <i class="fa-solid fa-chair pe-2"></i>
+                                    11 PASSENGERS
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-clock pe-2"></i>
+                                    8:45 HOURS
+                                </span>
+                            </div>
+                            <a href="#">
+                                SEE DETAIL >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-4">
+                    <div class="box">
+                        <div class="img ">
+                            <img src="img/BK48J55.png" alt="">
+                        </div>
+                        <div class="deatil">
+                            <h3>Luxury Helicopter</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="info d-flex pb-3">
+                                <span>
+                                    <i class="fa-solid fa-chair pe-2"></i>
+                                    11 PASSENGERS
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-clock pe-2"></i>
+                                    8:45 HOURS
+                                </span>
+                            </div>
+                            <a href="#">
+                                SEE DETAIL >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our services -->
+    <section class="services">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-8">
+                    <div class="title text-center">
+                        <h6 class="mb-2">AIRCRAFT</h6>
+                        <p class="display-4 mb-2">Our Fleet</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-6 mb-5">
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/XV3DQWH-min.jpg" alt="" height="300" width="570">
+                        </div>
+                        <div class="caption">
+                            <div class="text-start">
+                                <h4>Business Jet Charter</h4>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit asper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-6 mb-5">
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/GCC2W7N-min.jpg" alt="" height="300" width="570">
+                        </div>
+                        <div class="caption">
+                            <div class="text-start">
+                                <h4>Pet Flights</h4>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit asper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-6 mb-5">
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/EYKJLGT-min.jpg" alt="" height="300" width="570">
+                        </div>
+                        <div class="caption">
+                            <div class="text-start">
+                                <h4>Air Freight & Cargo</h4>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit asper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-6 mb-5">
+                    <div class="card">
+                        <div class="img">
+                            <img src="img/PVJ7ZH9-min.jpg" alt="" height="300" width="570">
+                        </div>
+                        <div class="caption">
+                            <div class="text-start">
+                                <h4>Air Ambulance</h4>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit asper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="single">
+                        <a class="fw-bolder d-inline-block fs-5 mb-4" href="#">
+                            <img src="img/pngwing.com (5).png" alt=""
+                                style="width: 40px; height: 40px; padding-right: 5px;">
+                            AIRPREDISE
+                        </a>
+                        <p>
+                            Non augue egestas commodo velit eget vestibulu mtellus. Curabitur vulpujusto elit at
+                            elementum orci pulvinar vel. Pellentesq habitant morbi tristique. Pellentesque habitant
+                            morbi tristique.
+                        </p>
+                        <div class="social-link mt-4">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="single-2">
+                        <h3 class="fw-bold">Explore</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Private Jet Catering
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Destinations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Flight Search
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Book Flight
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="single-2">
+                        <h3 class="fw-bold">Links</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Terms of Use
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    News & Press
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQ's
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="single-2 and-3">
+                        <h3 class="fw-bold">Contact Us</h3>
+                        <ul>
+                            <li class="position-relative">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <i class="fa-regular fa-envelope"></i>
+                                <a href="#">
+                                    Private Jet Catering
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="#">
+                                    Destinations
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <p class="text-white">
+                            © Copyright 2024 by
+                            <a href="#">
+                                Avelo
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <ul class="pe-0 mb-0 d-flex">
+                            <li class="d-inline-block me-0">
+                                <a href="#" class="me-4 text-white fw-medium">
+                                    Privacy & Policy
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#" class="text-white fw-medium">
+                                    Terms and Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape">
+            <img src="img/shape12.png" alt="">
+        </div>
+    </footer>
+    <!-- boostrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jqery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- sticky-header -->
+    <script>
+        window.onscroll = function () {
+            var header = document.querySelector("header");
+            if (window.pageYOffset > 200) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        };
+    </script>
+    <!-- cursor -->
+    <script>
+        var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursor.classList.add('hover');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        })
+    </script>
+    <!-- counter -->
+    <script>
+            (() => {
+                const counter = document.querySelectorAll(".counter");
+                // covert to array
+                const array = Array.from(counter);
+                // select array element
+                array.map((item) => {
+                    // data layer
+                    let counterInnerText = item.textContent;
+
+                    let count = 1;
+                    let speed = item.dataset.speed / counterInnerText;
+                    function counterUp() {
+                        item.textContent = count++;
+                        if (counterInnerText < count) {
+                            clearInterval(stop);
+                        }
+                    }
+                    const stop = setInterval(() => {
+                        counterUp();
+                    }, speed);
+                });
+            })();
+
+    </script>
+    <!-- loader -->
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () { // allowing 3 secs to fade out loader
+                $('.page-loader').fadeOut('slow');
+            }, 3500);
+        });
+    </script>
+</body>
+
+</html>

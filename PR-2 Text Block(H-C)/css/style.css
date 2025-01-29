@@ -1,0 +1,18 @@
+p{
+    color: blueviolet;
+    font-size: 36px;
+    font-family: 'Ephesis';
+    font-weight: normal;
+}
+.name{
+    color: aqua;
+    font-family: 'Vina Sans';
+    font-size: 48px;
+}
+.name1{
+    color: rgb(0, 255, 94);
+    font-family: 'Rubik Mono One';
+}
+.name2{
+    color: rgb(255, 0, 208);
+}

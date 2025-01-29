@@ -32,7 +32,7 @@ app.use(session({
 }))
 app.use(passport.session());
 app.use(passport.initialize());
-app.use(passport.setUser);
+app.use(passport.setUser());
 app.use(express.urlencoded());
 
 app.use(flash());
